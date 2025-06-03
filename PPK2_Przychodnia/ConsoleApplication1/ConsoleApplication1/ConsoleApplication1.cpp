@@ -1,0 +1,154 @@
+﻿// ConsoleApplication1.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
+//
+
+#include <iostream>
+#include <cstring>
+#include <sstream>
+#include <fstream>
+
+class Osoba {
+        char *imie,
+         *nazwisko;
+
+    public:
+        Osoba() {
+            imie = new char[1];
+            imie[0] = '\0';
+
+            nazwisko = new char[1];
+            nazwisko[0] = '\0';
+        }
+        Osoba(const char* _Imie, const char* _Nazwisko) {
+            imie = new char[strlen(_Imie) + 1];
+            strcpy_s(imie, strlen(_Imie) + 1, _Imie);
+
+            nazwisko = new char[strlen(_Nazwisko) + 1];
+            strcpy_s(nazwisko, strlen(_Nazwisko) + 1, _Nazwisko);
+
+        }
+        Osoba(const Osoba &inna) {
+            imie = new char[strlen(inna.imie) + 1]; //kopiuje dane nie wskaznik
+            strcpy_s(imie, strlen(inna.imie) + 1, inna.imie);
+
+            nazwisko = new char[strlen(inna.nazwisko) + 1];
+            strcpy_s(nazwisko, strlen(inna.nazwisko) + 1, inna.nazwisko);
+
+        }
+        Osoba& operator = (const Osoba& inna){
+            if (this != &inna) {
+                delete[] imie;
+                delete[] nazwisko;
+
+                imie = new char[strlen(inna.imie) + 1]; 
+                strcpy_s(imie, strlen(inna.imie) + 1, inna.imie);
+
+                nazwisko = new char[strlen(inna.nazwisko) + 1];
+                strcpy_s(nazwisko, strlen(inna.nazwisko) + 1, inna.nazwisko);
+
+            }
+            return *this;
+
+        }
+        char* getImie() {
+            return imie;
+        }
+        char* getNazwisko() {
+            return nazwisko;
+        }
+        ~Osoba() { //destruktor
+            delete[] imie;
+            delete[] nazwisko; //zwolnienie pamięci
+        }
+};
+class Pacjent :public Osoba {
+    int idPacjenta;
+
+    public:
+        Pacjent(const char* _Imie, const char* _Nazwisko, int _idPacjenta):Osoba(_Imie, _Nazwisko) {
+            idPacjenta = _idPacjenta;
+        }
+        int getID() {
+            return idPacjenta;
+        }
+};
+class Lekarz : public Osoba {
+public:
+    char *pesel;
+    char* specjalizacja;
+    char dniPrzyjec[7][15];
+    char godzinyPrzyjec[7][12];
+    
+    public:
+        Lekarz(const char* _Pesel, const char* _Imie, const char* _Nazwisko,const char* _Specjalizacja, char _dniPrzyjec[7][15], char _godzinyPrzyjec[7][12]) :Osoba(_Imie, _Nazwisko) {
+            pesel = new char[strlen(_Pesel) + 1];
+            strcpy_s(pesel, strlen(_Pesel) + 1, _Pesel);
+            specjalizacja = new char[strlen(_Specjalizacja) + 1];
+            strcpy_s(specjalizacja, strlen(_Specjalizacja) + 1, _Specjalizacja);
+           for (int i = 0; i < 7; i++) {
+                dniPrzyjec[i][0] = '\0';
+                godzinyPrzyjec[i][0] = '\0';
+            }
+            for (int i = 0; i < 7; i++) {
+                strcpy_s(dniPrzyjec[i],strlen(_dniPrzyjec[i]) + 1, _dniPrzyjec[i]);
+                strcpy_s(godzinyPrzyjec[i],strlen(_godzinyPrzyjec[i])+1, _godzinyPrzyjec[i]);
+            }
+        }
+
+        Lekarz(const Lekarz& inny){
+            pesel = new char[strlen(inny.pesel) + 1];
+            strcpy_s(pesel, strlen(inny.pesel) + 1, inny.pesel);
+            
+            specjalizacja = new char[strlen(inny.specjalizacja) + 1];
+            strcpy_s(specjalizacja, strlen(inny.specjalizacja) + 1, inny.specjalizacja);
+            for (int i = 0; i < 7; i++) {
+                dniPrzyjec[i][0] = '\0';
+                godzinyPrzyjec[i][0] = '\0';
+            }
+            for (int i = 0; i < 7; i++) {
+                strcpy_s(dniPrzyjec[i], strlen(inny.dniPrzyjec[i]) + 1, inny.dniPrzyjec[i]);
+                strcpy_s(godzinyPrzyjec[i], strlen(inny.godzinyPrzyjec[i]) + 1, inny.godzinyPrzyjec[i]);
+            }
+        }
+        Lekarz& operator = (const Lekarz& inny) {
+            if (this != &inny) {
+                delete[] specjalizacja;
+                delete[] pesel;
+
+                pesel = new char[strlen(inny.pesel) + 1];
+                strcpy_s(pesel, strlen(inny.pesel) + 1, inny.pesel);
+                specjalizacja = new char[strlen(inny.specjalizacja) + 1];
+                strcpy_s(specjalizacja, strlen(inny.specjalizacja) + 1, inny.specjalizacja);
+
+            }
+            return *this;
+
+        }
+        const char (*getDni() const)[15] {
+            return dniPrzyjec;
+        }
+        ~Lekarz() {
+            delete[] specjalizacja;
+            delete[] pesel;
+
+        }
+};
+void openLekarze(const char* plik) {
+    std::ifstream stream(plik);
+    char *ddd = new char[stream.tellg()];
+    while (stream.get(*ddd))
+    {
+
+        std::cout << *ddd;
+    }
+}
+
+int main()
+{
+    Pacjent chuj("michal", "wol", 138);
+    char dni[7][15] = { "wtorek", "sorda" };  // tylko dwie wartości, reszta pustych
+    char godziny[7][12] = { "13:45-19:00", "12:00-14:00" };
+    openLekarze("E:\Lekarze.txt");
+    Lekarz koks("1234568975", "asddsasd", "d", "deee", dni, godziny);
+    //std::cout << koks.getDni();
+
+}

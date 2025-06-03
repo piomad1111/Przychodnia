@@ -1,0 +1,20 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\legos\Documents\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(141,16): error C2665: „std::basic_istream<char,std::char_traits<char>>::getline”: żadna przeciążona funkcja nie może przekonwertować wszystkich typów argumentów
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\istream(444,39):
+      może to być „std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::getline(_Elem *,std::streamsize)”
+          with
+          [
+              _Elem=char
+          ]
+          C:\Users\legos\Documents\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(141,16):
+          „std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::getline(_Elem *,std::streamsize)”: nie można dokonać konwersji argumentu 1 z „char” do „_Elem *”
+          with
+          [
+              _Elem=char
+          ]
+              C:\Users\legos\Documents\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(141,24):
+              Konwersja z typu całkowitego na typ wskaźnika wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
+      C:\Users\legos\Documents\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(141,16):
+      podczas próby dopasowania listy argumentów "(char, const char [2])"
+  
+C:\Users\legos\Documents\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(151,17): warning C4129: „L”: nierozpoznana sekwencja ucieczki znaków
