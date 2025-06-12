@@ -79,6 +79,12 @@ public:
     char godzinyPrzyjec[7][12];
     
     public:
+        Lekarz():Osoba() {
+            pesel = new char[1];
+            pesel = '\0';
+            specjalizacja = new char[1];
+            specjalizacja = '\0';
+        }
         Lekarz(const char* _Pesel, const char* _Imie, const char* _Nazwisko,const char* _Specjalizacja, char _dniPrzyjec[7][15], char _godzinyPrzyjec[7][12]) :Osoba(_Imie, _Nazwisko) {
             pesel = new char[strlen(_Pesel) + 1];
             strcpy_s(pesel, strlen(_Pesel) + 1, _Pesel);
@@ -132,22 +138,56 @@ public:
 
         }
 };
-void openLekarze(const char* plik) {
-    std::ifstream stream(plik);
-    char *ddd = new char[stream.tellg()];
-    while (stream.get(*ddd))
-    {
+class wizyta {
+    int idWizyty, idPacjenta, idLekarza;
+    char* data;
+    char* godzina;
 
-        std::cout << *ddd;
+
+
+};
+class BazaDanych {
+    Lekarz lekarze[50];
+    wizyta wizyty[500];
+    BazaDanych() {
+
     }
-}
+    void wczytajLekarzy(const char* nazwaPliku) {
+        std::ifstream stream(nazwaPliku);
+        if (!stream.is_open()) {
+            //nie wczytano pliku
+            return;
+        }
+
+        int i = 0;
+        while (!stream.eof()){
+            char* bufor = new char[901];
+            stream.getline(bufor, 900);
+            char* context = nullptr; //pozycja dla kolejnych wywolan(zapamiętanie)
+            char* pesel = strtok_s(bufor, ";", &context); //dzieli tekst na fragmenty
+            char* imie = strtok_s(NULL, ";", &context); 
+            char* nazwisko = strtok_s(NULL, ";", &context);
+            char* specjalizacja = strtok_s(NULL, ";", &context);
+            char* dni = strtok_s(NULL, ";", &context);
+            char* godziny = strtok_s(NULL, ";", &context);
+
+            lekarze[i] = Lekarz(&pesel, &imie, &nazwisko, &specjalizacja, &dni, &godziny);
+                i++;
+
+            
+
+        }
+        
+    }
+};
+
 
 int main()
 {
     Pacjent chuj("michal", "wol", 138);
     char dni[7][15] = { "wtorek", "sorda" };  // tylko dwie wartości, reszta pustych
     char godziny[7][12] = { "13:45-19:00", "12:00-14:00" };
-    openLekarze("E:\Lekarze.txt");
+    wczytajLekarzy("E:/Lekarze.txt");
     Lekarz koks("1234568975", "asddsasd", "d", "deee", dni, godziny);
     //std::cout << koks.getDni();
 
