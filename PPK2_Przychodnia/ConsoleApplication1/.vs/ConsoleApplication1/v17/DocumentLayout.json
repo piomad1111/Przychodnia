@@ -7,7 +7,8 @@
       "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\__msvc_string_view.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Osoba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "__msvc_string_view.hpp",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\__msvc_string_view.hpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\__msvc_string_view.hpp",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\__msvc_string_view.hpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\__msvc_string_view.hpp",
-              "ViewState": "AgIAAG0BAAAAAAAAAAAQwH4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-12T22:05:33.587Z",
+              "Title": "Osoba.cpp",
+              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Osoba.cpp",
+              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\Osoba.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-14T15:02:38.776Z",
               "EditorCaption": ""
             },
             {
@@ -40,7 +41,7 @@
               "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
               "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAAwKsAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T12:02:20.253Z",
               "EditorCaption": ""

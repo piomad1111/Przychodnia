@@ -1,22 +1,2 @@
 ﻿  ConsoleApplication1.cpp
-C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(84,21): error C2440: "=": nie można konwertować z "char" na "char *"
-      C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(84,21):
-      Konwersja z typu całkowitego na typ wskaźnika wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
-  
-C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(86,29): error C2440: "=": nie można konwertować z "char" na "char *"
-      C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(86,29):
-      Konwersja z typu całkowitego na typ wskaźnika wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
-  
-C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(174,32): error C2440: "<function-style-cast>": nie można konwertować z "initializer list" na "Lekarz"
-      C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(174,32):
-      „Lekarz::Lekarz”: żadna przeciążona funkcja nie może przekonwertować wszystkich typów argumentów
-          C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(88,9):
-          może to być „Lekarz::Lekarz(const char *,const char *,const char *,const char *,char [][15],char [][12])”
-              C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(174,32):
-              „Lekarz::Lekarz(const char *,const char *,const char *,const char *,char [][15],char [][12])”: nie można dokonać konwersji argumentu 1 z „char **” do „const char *”
-                  C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(174,33):
-                  Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji ujętego w nawiasach
-          C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(174,32):
-          podczas próby dopasowania listy argumentów "(char **, char **, char **, char **, char **, char **)"
-  
-C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(190,5): error C3861: "wczytajLekarzy": identyfikatora nie odnaleziono
+  ConsoleApplication1.vcxproj -> C:\Users\legos\Documents\Git\PPK2_Przychodnia\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
