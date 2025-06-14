@@ -129,8 +129,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BazaDanych.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="Lekarz.cpp" />
     <ClCompile Include="Osoba.cpp" />
+    <ClCompile Include="Pacjent.cpp" />
+    <ClCompile Include="Wizyta.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BazaDanych.h" />
+    <ClInclude Include="Lekarz.h" />
+    <ClInclude Include="Osoba.h" />
+    <ClInclude Include="Pacjent.h" />
+    <ClInclude Include="Wizyta.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
