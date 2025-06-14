@@ -1,8 +1,8 @@
 #include "BazaDanych.h"
-    BazaDanych::BazaDanych() {
+BazaDanych::BazaDanych() {
 
-    }
-    void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
+ }
+void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
         std::ifstream stream(nazwaPliku);
         if (!stream.is_open()) {
             //nie wczytano pliku
@@ -11,8 +11,8 @@
 
         int i = 0;
         while (!stream.eof()) {
-            char* bufor = new char[901];
-            stream.getline(bufor, 900);
+            char* bufor = new char[512];
+            stream.getline(bufor, 511);
             if (bufor[0] == '\0') {
                 delete[] bufor;
                 continue;
@@ -29,7 +29,7 @@
                 continue;
             }
 
-            char dniTab[7][15] = { " " };
+            char dniTab[7][15] = { "" };
             char* dniBufor = new char[strlen(dni) + 1];
             strcpy_s(dniBufor, strlen(dni) + 1, dni);
             char* contextDni = nullptr;
@@ -56,8 +56,19 @@
             lekarze[i] = Lekarz(pesel, imie, nazwisko, specjalizacja, dniTab, godzinyTab);
             i++;
 
-
-
         }
 
     }
+
+
+void BazaDanych::zapiszBaze(const char* nazwaPliku) {
+    struct Record {
+        char idPacjenta[20];
+    };
+    std::fstream stream("baza.dat", std::ios::out | std::ios::binary);
+    Record rec{ "Skibidi" };
+    if (stream) {
+        stream.write(reinterpret_cast<char*>(&rec), sizeof(Record));
+        
+    }
+}

@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Pacjent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Pacjent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Pacjent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Pacjent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BazaDanych.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Lekarz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Lekarz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BazaDanych.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Wizyta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Wizyta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Osoba.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Lekarz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Osoba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BazaDanych.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Lekarz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\BazaDanych.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4A45625-898E-4DDD-A791-B0A4F1F4CB37}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,18 +37,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 157,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 504,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ConsoleApplication1.cpp",
               "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
               "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAoAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAEwBcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T12:02:20.253Z",
               "IsPinned": true,
@@ -69,124 +57,85 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BazaDanych.cpp",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.cpp",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\BazaDanych.cpp",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.cpp",
-              "RelativeToolTip": "ConsoleApplication1\\BazaDanych.cpp",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-14T15:33:00.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pacjent.cpp",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Pacjent.cpp",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\Pacjent.cpp",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Pacjent.cpp",
-              "RelativeToolTip": "ConsoleApplication1\\Pacjent.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-14T15:22:25.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Lekarz.cpp",
               "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Lekarz.cpp",
               "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.cpp",
               "RelativeToolTip": "ConsoleApplication1\\Lekarz.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-14T15:23:16.577Z",
+              "WhenOpened": "2025-06-14T18:06:48.03Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Wizyta.h",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.h",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\Wizyta.h",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.h",
-              "RelativeToolTip": "ConsoleApplication1\\Wizyta.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:32:15.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Osoba.h",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.h",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\Osoba.h",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.h",
-              "RelativeToolTip": "ConsoleApplication1\\Osoba.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:06:27.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Osoba.cpp",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.cpp",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\Osoba.cpp",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Osoba.cpp",
-              "RelativeToolTip": "ConsoleApplication1\\Osoba.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-14T15:02:38.776Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 359,
-          "SelectedChildIndex": 2,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Lekarz.h",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.h",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\Lekarz.h",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.h",
-              "RelativeToolTip": "ConsoleApplication1\\Lekarz.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:23:00.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "BazaDanych.h",
               "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\BazaDanych.h",
               "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.h",
               "RelativeToolTip": "ConsoleApplication1\\BazaDanych.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:33:24.766Z",
+              "WhenOpened": "2025-06-14T17:38:20.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BazaDanych.cpp",
+              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\BazaDanych.cpp",
+              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\BazaDanych.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\BazaDanych.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-14T17:17:30.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Wizyta.cpp",
+              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Wizyta.cpp",
+              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\Wizyta.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-14T15:46:18.285Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 236,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lekarz.h",
+              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Lekarz.h",
+              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Lekarz.h",
+              "RelativeToolTip": "ConsoleApplication1\\Lekarz.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-14T18:01:41.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Pacjent.h",
-              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Pacjent.h",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\Pacjent.h",
-              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Pacjent.h",
-              "RelativeToolTip": "ConsoleApplication1\\Pacjent.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAABGAAAAAAAAAA==",
+              "Title": "Wizyta.h",
+              "DocumentMoniker": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Wizyta.h",
+              "ToolTip": "C:\\Users\\legos\\Documents\\Git\\PPK2_Przychodnia\\ConsoleApplication1\\ConsoleApplication1\\Wizyta.h",
+              "RelativeToolTip": "ConsoleApplication1\\Wizyta.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:22:49.99Z",
+              "WhenOpened": "2025-06-14T17:55:58.901Z",
               "EditorCaption": ""
             }
           ]

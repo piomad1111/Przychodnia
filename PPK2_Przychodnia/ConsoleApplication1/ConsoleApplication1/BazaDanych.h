@@ -10,4 +10,6 @@ public:
     Wizyta wizyty[500];
     BazaDanych();
     void wczytajLekarzy(const char* nazwaPliku);
+    void zapiszBaze(const char* nazwaPliku);
+
 };
