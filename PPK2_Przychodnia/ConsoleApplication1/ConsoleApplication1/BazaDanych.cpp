@@ -22,8 +22,8 @@ void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
             char* imie = strtok_s(NULL, "; ", &context);
             char* nazwisko = strtok_s(NULL, "; ", &context);
             char* specjalizacja = strtok_s(NULL, "; ", &context);
-            char* dni = strtok_s(NULL, "; ", &context);
-            char* godziny = strtok_s(NULL, "; ", &context);
+            char* dni = strtok_s(NULL, ";", &context);
+            char* godziny = strtok_s(NULL, ";", &context);
             if (!pesel || !imie || !nazwisko || !specjalizacja || !dni || !godziny) {
                 delete[] bufor;
                 continue;
@@ -59,16 +59,40 @@ void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
         }
 
     }
+struct rekord {
+    char idWizyty[20], idPacjenta[12], idLekarza[12];
+    char data[11];
+    char godzina[6];
+};
 
-
+    
 void BazaDanych::zapiszBaze(const char* nazwaPliku) {
-    struct Record {
-        char idPacjenta[20];
-    };
-    std::fstream stream("baza.dat", std::ios::out | std::ios::binary);
-    Record rec{ "Skibidi" };
-    if (stream) {
-        stream.write(reinterpret_cast<char*>(&rec), sizeof(Record));
-        
+    std::fstream stream(nazwaPliku, std::ios::out | std::ios::binary);
+    rekord rec;
+    int i = 0;
+    while(strlen(wizyty[i].getIdWizyty()) > 0) {
+        strcpy_s(rec.idWizyty, wizyty[i].getIdWizyty());
+        strcpy_s(rec.idPacjenta, wizyty[i].getIdPacjenta());
+        strcpy_s(rec.idLekarza, wizyty[i].getIdLekarza());
+        strcpy_s(rec.data, wizyty[i].getData());
+        strcpy_s(rec.godzina, wizyty[i].getGodzina());
+        stream.write(reinterpret_cast<char*>(&rec), sizeof(rekord));
+
+        i++;
     }
+    stream.close();
+}
+void BazaDanych::wczytajBaze(const char* nazwaPliku) {
+
+    std::fstream stream(nazwaPliku, std::ios::in | std::ios::binary);
+    if (!stream) {
+        //error
+    }
+    rekord rec2;
+    int i = 0;
+    while (stream.read(reinterpret_cast<char*>(&rec2), sizeof(rekord))) {
+        wizyty[i] = Wizyta(rec2.idWizyty, rec2.idPacjenta, rec2.idLekarza, rec2.data, rec2.godzina);
+        i++;
+    }
+    stream.close();
 }

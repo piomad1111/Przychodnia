@@ -47,6 +47,49 @@ Wizyta::Wizyta(const Wizyta &inna) {
 	godzina = new char[strlen(inna.godzina) + 1];
 	strcpy_s(godzina, strlen(inna.godzina) + 1, inna.godzina);
 }
+Wizyta& Wizyta::operator = (const Wizyta& inny) {
+	if (this != &inny) {
+		delete[] idWizyty;
+		delete[] idPacjenta;
+		delete[] idLekarza;
+		delete[] data;
+		delete[] godzina;
+
+		idWizyty = new char[strlen(inny.idWizyty) + 1];
+		strcpy_s(idWizyty, strlen(inny.idWizyty) + 1, inny.idWizyty);
+
+		idPacjenta = new char[strlen(inny.idPacjenta) + 1];
+		strcpy_s(idPacjenta, strlen(inny.idPacjenta) + 1, inny.idPacjenta);
+
+		idLekarza = new char[strlen(inny.idLekarza) + 1];
+		strcpy_s(idLekarza, strlen(inny.idLekarza) + 1, inny.idLekarza);
+
+		data = new char[strlen(inny.data) + 1];
+		strcpy_s(data, strlen(inny.data) + 1, inny.data);
+
+		godzina = new char[strlen(inny.godzina) + 1];
+		strcpy_s(godzina, strlen(inny.godzina) + 1, inny.godzina);
+		
+
+	}
+	return *this;
+
+}
+char* Wizyta::getIdWizyty(){
+	return idWizyty;
+}
+char* Wizyta::getIdPacjenta() {
+	return idPacjenta;
+}
+char* Wizyta::getIdLekarza(){
+	return idLekarza;
+}
+char* Wizyta::getData() {
+	return data;
+}
+char* Wizyta::getGodzina() {
+	return godzina;
+}
 Wizyta::~Wizyta() {
 	delete[] idWizyty;
 	delete[] idPacjenta;

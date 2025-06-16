@@ -9,6 +9,15 @@ public:
     Wizyta();
     Wizyta(const char* _idWizyty, const char* _idPacjenta, const char* _idLekarza, const char* _data, const char* _godzina);
     Wizyta(const Wizyta& inna);
+    Wizyta& operator = (const Wizyta& inny);
+    char* getIdWizyty();
+    char* getIdPacjenta();
+    char* getIdLekarza();
+    char* getData();
+    char* getGodzina();
+
+
+
     ~Wizyta();
 };
 
