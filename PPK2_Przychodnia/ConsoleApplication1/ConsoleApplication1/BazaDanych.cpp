@@ -2,6 +2,33 @@
 BazaDanych::BazaDanych() {
 
  }
+
+BazaDanych::BazaDanych(Lekarz _lekarze[50], Wizyta _wizyty[500]) {
+    for (size_t i = 0; i < 50; i++)
+    {
+        lekarze[i] = _lekarze[i];
+    }
+    for (size_t i = 0; i < 500; i++)
+    {
+        wizyty[i] = _wizyty[i];
+    }
+}
+BazaDanych& BazaDanych::operator = (const BazaDanych& inna) {
+    if (this != &inna) {
+        for (size_t i = 0; i < 50; i++)
+        {
+            lekarze[i] = inna.lekarze[i];
+        }
+        for (size_t i = 0; i < 500; i++)
+        {
+            wizyty[i] = inna.wizyty[i];
+        }
+
+
+    }
+    return *this;
+
+}
 void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
         std::ifstream stream(nazwaPliku);
         if (!stream.is_open()) {
@@ -55,7 +82,7 @@ void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
 
             lekarze[i] = Lekarz(pesel, imie, nazwisko, specjalizacja, dniTab, godzinyTab);
             i++;
-
+            delete[] bufor;
         }
 
     }
@@ -92,6 +119,20 @@ void BazaDanych::wczytajBaze(const char* nazwaPliku) {
     int i = 0;
     while (stream.read(reinterpret_cast<char*>(&rec2), sizeof(rekord))) {
         wizyty[i] = Wizyta(rec2.idWizyty, rec2.idPacjenta, rec2.idLekarza, rec2.data, rec2.godzina);
+        i++;
+    }
+    stream.close();
+}
+void BazaDanych::wyswietlBaze(const char* nazwaPliku) {
+
+    std::fstream stream(nazwaPliku, std::ios::in | std::ios::binary);
+    if (!stream) {
+        //error
+    }
+    rekord rec2;
+    int i = 0;
+    while (stream.read(reinterpret_cast<char*>(&rec2), sizeof(rekord))) {
+       std::cout<<rec2.idWizyty<<" "<< rec2.idPacjenta << " " << rec2.idLekarza << " " << rec2.data << " " << rec2.godzina << "\n";
         i++;
     }
     stream.close();
