@@ -56,9 +56,6 @@
         return *this;
 
     }
-    /*const char (*Lekarz::getDni() const)[15] {
-        return dniPrzyjec;
-    }*/
     char* Lekarz::getPesel() {
         return pesel;
     }

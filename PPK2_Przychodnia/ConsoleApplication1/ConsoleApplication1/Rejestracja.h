@@ -18,8 +18,7 @@ class Rejestracja
 	std::vector<char*> wyborDatyLekarz(std::vector<int> dniTyg);
 	std::vector<int> wyborLekarza();
 	std::vector<char*> pokazDostepneGodziny(Lekarz& lekarz, const char* data);
-	void dodajWizyte(char* pesel, char* data, char* godzina, const char* plikBaza);
+	void dodajWizyte(char* pesel, char* data, char* godzina, const char* plikBaza, char* idPacjenta);
 	void anulujWizyte(const char* idWizytyDoUsuniecia, const char* plikBaza);
-
 };
 

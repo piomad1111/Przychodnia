@@ -67,7 +67,7 @@ std::vector<char*> Rejestracja::wyborDatyLekarz(std::vector<int> dniTyg) {
 		}
 	}
 
-	// Wypisz tylko te, które zosta³y zapisane
+	// te, które zosta³y zapisane
 	for (int i = 0; i < daty.size(); ++i) {
 		std::cout << i << ". " << daty[i] << std::endl;
 	}
@@ -90,7 +90,7 @@ std::vector<char*> Rejestracja::pokazDostepneGodziny(Lekarz& lekarz, const char*
     };
     const char* szukanyDzien = dniTygodnia[tmData.tm_wday];
 
-    // ZnajdŸ indeks dnia w lekarz.dniPrzyjec
+    // ZnajdŸ indeks dnia
     int indeks = -1;
     for (int i = 0; i < 7; ++i) {
         if (strcmp(lekarz.dniPrzyjec[i], szukanyDzien) == 0) {
@@ -147,7 +147,7 @@ std::vector<char*> Rejestracja::pokazDostepneGodziny(Lekarz& lekarz, const char*
     return dostepne;
 }
 
-void Rejestracja::dodajWizyte(char *pesel, char* data, char* godzina, const char* plikBaza) {
+void Rejestracja::dodajWizyte(char *pesel, char* data, char* godzina, const char* plikBaza, char* idPacjenta) {
     char* idWizyty = new char[17];
     char nowaGodzina[5];
     char nowaData[9];
@@ -160,7 +160,7 @@ void Rejestracja::dodajWizyte(char *pesel, char* data, char* godzina, const char
     // Po³¹cz wszystko
     snprintf(idWizyty, 17, "%s%s%s", nowaData, nowaGodzina, czescPesel);
     int i = 0;
-    Wizyta nowaWizyta(idWizyty, "aa", pesel, data, godzina);
+    Wizyta nowaWizyta(idWizyty, idPacjenta, pesel, data, godzina);
     do {
         if (strlen(baza.wizyty[i].getIdWizyty()) == 0) {
             baza.wizyty[i] = nowaWizyta;
@@ -168,15 +168,15 @@ void Rejestracja::dodajWizyte(char *pesel, char* data, char* godzina, const char
         }
         i++;
     } while (strlen(baza.wizyty[i - 1].getIdWizyty()) > 0);
-    std::cout << "Poprawnie dodano wizyte. Id wizyty to: " << idWizyty << std::endl;
     baza.zapiszBaze(plikBaza);
+    std::cout << "Poprawnie dodano wizyte. Id wizyty to: " << idWizyty << std::endl;
 }
 
 
 void Rejestracja::anulujWizyte(const char* idWizytyDoUsuniecia, const char* plikBaza) {
     int index = -1;
 
-    // ZnajdŸ indeks wizyty do usuniêcia
+    //indeks wizyty do usuniêcia
     for (int i = 0; i < 500; ++i) {
         if (strlen(baza.wizyty[i].getIdWizyty()) == 0) break; // koniec aktywnych wizyt
         if (strcmp(baza.wizyty[i].getIdWizyty(), idWizytyDoUsuniecia) == 0) {
@@ -190,13 +190,11 @@ void Rejestracja::anulujWizyte(const char* idWizytyDoUsuniecia, const char* plik
         return;
     }
 
-    // Zwolnij pamiêæ z obiektu, który usuwamy (dziêki destruktorowi)
     baza.wizyty[index] = Wizyta();
 
-    // Przesuñ pozosta³e wizyty
     for (int i = index; i < 499; ++i) {
         if (strlen(baza.wizyty[i + 1].getIdWizyty()) == 0) {
-            baza.wizyty[i] = Wizyta(); // wyczyœæ ostatni element
+            baza.wizyty[i] = Wizyta();
             break;
         }
         baza.wizyty[i] = baza.wizyty[i + 1];

@@ -1,10 +1,20 @@
-85010112345; Anna; Kowalska; Kardiolog; Poniedziałek, Środa, Piątek; 08:00-12:00, 09:00-13:00, 10:00-14:00  
+85010112345; Anna; Kowalska; Kardiolog; Poniedzialek, Sroda, Piatek; 08:00-12:00, 09:00-13:00, 10:00-14:00  
 74031567890; Jan; Nowak; Internista; Wtorek, Czwartek; 09:30-13:45, 08:00-12:00  
-92052234567; Maria; Wiśniewska; Pediatra; Poniedziałek, Wtorek, Piątek; 10:00-14:00, 09:00-12:30, 11:00-15:00  
-80123045678; Piotr; Zieliński; Neurolog; Środa, Czwartek; 12:00-16:00, 13:00-17:00  
-90041178901; Katarzyna; Mazur; Dermatolog; Poniedziałek, Czwartek; 08:30-11:45, 10:00-13:00  
-83121298765; Tomasz; Dąbrowski; Ortopeda; Wtorek, Piątek; 13:00-17:00, 14:00-18:00  
-87030554321; Agnieszka; Kaczmarek; Ginekolog; Środa, Piątek; 09:00-12:30, 08:30-11:30  
-78070111223; Michał; Pawlak; Okulista; Poniedziałek, Wtorek; 14:00-18:00, 12:00-16:00  
-95092199887; Elżbieta; Nowicka; Endokrynolog; Wtorek, Czwartek; 10:15-13:15, 11:00-14:00  
-79102033445; Robert; Szymański; Psychiatra; Poniedziałek, Środa; 11:00-15:00, 12:00-16:00
+92052234567; Maria; Wisniewska; Pediatra; Poniedzialek, Wtorek, Piatek; 10:00-14:00, 09:00-12:30, 11:00-15:00  
+80123045678; Piotr; Zielinski; Neurolog; Sroda, Czwartek; 12:00-16:00, 13:00-17:00  
+90041178901; Katarzyna; Mazur; Dermatolog; Poniedzialek, Czwartek; 08:30-11:45, 10:00-13:00  
+83121298765; Tomasz; Dabrowski; Ortopeda; Wtorek, Piatek; 13:00-17:00, 14:00-18:00  
+87030554321; Agnieszka; Kaczmarek; Ginekolog; Sroda, Piatek; 09:00-12:30, 08:30-11:30  
+78070111223; Michal; Pawlak; Okulista; Poniedzialek, Wtorek; 14:00-18:00, 12:00-16:00  
+95092199887; Elzbieta; Nowicka; Endokrynolog; Wtorek, Czwartek; 10:15-13:15, 11:00-14:00  
+79102033445; Robert; Szymanski; Psychiatra; Poniedzialek, Sroda; 11:00-15:00, 12:00-16:00  
+83010145678; Krzysztof; Gorski; Kardiolog; Wtorek, Czwartek; 08:00-11:30, 10:00-13:30  
+85120478901; Justyna; Krol; Internista; Poniedzialek, Sroda, Piatek; 09:00-12:00, 08:00-11:00, 10:00-13:00  
+89031523456; Aleksandra; Bak; Pediatra; Wtorek, Czwartek; 10:00-14:30, 09:30-13:30  
+86070787654; Adam; Wojciechowski; Neurolog; Poniedzialek, Wtorek; 11:00-15:00, 10:30-14:30  
+84090966789; Renata; Wojcik; Dermatolog; Sroda, Piatek; 09:00-12:00, 10:00-13:00  
+80021855555; Bartosz; Czarnecki; Ginekolog; Wtorek, Czwartek; 12:00-16:00, 13:00-17:00  
+89123044444; Paulina; Kalinowska; Psychiatra; Wtorek, Piatek; 10:30-14:30, 11:00-15:00  
+82111333333; Marek; Grabowski; Ortopeda; Sroda, Czwartek; 13:00-17:00, 14:00-18:00  
+77122522222; Natalia; Lis; Okulista; Sroda, Piatek; 08:00-12:00, 09:00-13:00  
+90010111111; Joanna; Dudek; Endokrynolog; Poniedzialek, Czwartek; 08:30-12:30, 09:30-13:30

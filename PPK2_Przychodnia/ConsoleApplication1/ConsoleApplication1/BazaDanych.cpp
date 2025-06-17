@@ -32,7 +32,7 @@ BazaDanych& BazaDanych::operator = (const BazaDanych& inna) {
 void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
         std::ifstream stream(nazwaPliku);
         if (!stream.is_open()) {
-            //nie wczytano pliku
+            std::cout << "Blad pliku \n";
             return;
         }
 
@@ -87,7 +87,7 @@ void BazaDanych::wczytajLekarzy(const char* nazwaPliku) {
 
     }
 struct rekord {
-    char idWizyty[20], idPacjenta[12], idLekarza[12];
+    char idWizyty[20], idPacjenta[17], idLekarza[12];
     char data[11];
     char godzina[6];
 };
@@ -113,7 +113,8 @@ void BazaDanych::wczytajBaze(const char* nazwaPliku) {
 
     std::fstream stream(nazwaPliku, std::ios::in | std::ios::binary);
     if (!stream) {
-        //error
+        std::cout << "B³¹d bazy" << std::endl;
+
     }
     rekord rec2;
     int i = 0;
@@ -127,12 +128,46 @@ void BazaDanych::wyswietlBaze(const char* nazwaPliku) {
 
     std::fstream stream(nazwaPliku, std::ios::in | std::ios::binary);
     if (!stream) {
-        //error
+        std::cout<<"B³¹d bazy"<<std::endl;
     }
     rekord rec2;
     int i = 0;
     while (stream.read(reinterpret_cast<char*>(&rec2), sizeof(rekord))) {
        std::cout<<rec2.idWizyty<<" "<< rec2.idPacjenta << " " << rec2.idLekarza << " " << rec2.data << " " << rec2.godzina << "\n";
+        i++;
+    }
+    stream.close();
+}
+struct BazaDanych::rekordPacjent {
+    char imie[30], nazwisko[40], idPacjenta[21], dataUrodzenia[11];
+};
+
+void BazaDanych::zapiszBazePacjenci(const char* nazwaPliku) {
+    std::fstream stream(nazwaPliku, std::ios::out | std::ios::binary);
+    rekordPacjent rek;
+    int i = 0;
+    while (strlen(pacjenci[i].getID()) > 0) {
+        strcpy_s(rek.imie, pacjenci[i].getImie());
+        strcpy_s(rek.nazwisko, pacjenci[i].getNazwisko());
+        strcpy_s(rek.dataUrodzenia, pacjenci[i].getDataUrodzenia());
+        strcpy_s(rek.idPacjenta, pacjenci[i].getID());
+        stream.write(reinterpret_cast<char*>(&rek), sizeof(rekordPacjent));
+
+        i++;
+    }
+    stream.close();
+}
+void BazaDanych::wczytajBazePacjenci(const char* nazwaPliku) {
+
+    std::fstream stream(nazwaPliku, std::ios::in | std::ios::binary);
+    if (!stream) {
+        std::cout << "B³¹d bazy" << std::endl;
+
+    }
+    rekordPacjent rek2;
+    int i = 0;
+    while (stream.read(reinterpret_cast<char*>(&rek2), sizeof(rekordPacjent))) {
+        pacjenci[i] = Pacjent(rek2.imie, rek2.nazwisko,rek2.dataUrodzenia);
         i++;
     }
     stream.close();
